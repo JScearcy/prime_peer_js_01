@@ -73,14 +73,11 @@ while (i > 0){
 /*11. Create a function that accepts an argument 'val'. The function should convert 'val' to a String, then drop the first character off the String, but only if there is more than 1 character in the String. Return 'val' and set the 'value' to the returned value.*/
 
 function stringDrop(val){
-	var val1 = "";
 	val = val.toString();
 	if (val.length > 1){
-		for(i = 1; i < val.length; i++) {
-			val1 += val[i];
-		}
+		val = val.slice(1);
 	}
-	return val1;
+	return val;
 }
 
 /*12. Call the function.*/
